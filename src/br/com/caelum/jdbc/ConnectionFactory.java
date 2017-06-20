@@ -16,7 +16,7 @@ public class ConnectionFactory {
 	public Connection getConnection(){
 		try {
 			return DriverManager.getConnection(
-					"jdbc:oracle:thin:@localhost:1521:xe", "system", "Matuska@@35");
+					"jdbc:oracle:thin:@localhost:1521:xe", USER, PASSWORD);
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
